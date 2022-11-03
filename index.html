@@ -1,0 +1,51 @@
+
+
+<head>
+
+<style>
+#id{
+	width: 300px;
+	height: 300px;
+}
+</style>
+
+
+<script>
+function note() {
+  const gulpSound = new Audio("gulp.mp3");
+  
+
+  var note = document.getElementById("note");
+  var punkte = document.getElementById("punkte");
+      punkte.innerHTML = punkte.innerHTML*1+1*1;
+
+  
+  document.getElementById("id").style.width = "500px";
+  document.getElementById("id").style.height = "500px";
+  gulpSound.play();
+  
+  setTimeout(function() {
+    document.getElementById("id").style.width = "300px";
+    document.getElementById("id").style.height = "300px";
+  }, 50);
+
+  
+}
+
+
+
+</script>
+
+
+</head>
+<h1>Schlag den Tom</h1><br>
+
+
+
+<div>Deine Punkte: <div id="punkte">0</div></div><br>
+
+
+<img id="id" onclick="note()" src="20221002_033322.jpg" alt="Tom lutscht gerne Schwänze">
+
+
+
